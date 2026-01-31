@@ -13,7 +13,7 @@ from .frontmatter import save_markdown, load_markdown
 _JSON_ARRAY_RE = re.compile(r"(\[\s*\{.*?\}\s*\])", re.DOTALL)
 
 def _today() -> str:
-    return dt.datetime.utcnow().date().isoformat()
+    return dt.datetime.now(dt.UTC).date().isoformat()
 
 def _extract_json_array(text: str) -> list[dict[str, Any]]:
     # Prefer a clean JSON array, but fall back to regex extraction.

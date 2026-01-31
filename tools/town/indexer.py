@@ -11,7 +11,7 @@ from .text import md_table
 
 
 def _now_iso() -> str:
-    return dt.datetime.utcnow().replace(microsecond=0).isoformat() + "Z"
+    return dt.datetime.now(dt.UTC).replace(microsecond=0).isoformat().replace("+00:00", "Z")
 
 
 def _is_entity_file(path: Path) -> bool:

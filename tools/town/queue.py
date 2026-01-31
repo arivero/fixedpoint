@@ -11,7 +11,7 @@ from .frontmatter import load_markdown, save_markdown
 from .ingest import ingest
 
 def _today() -> str:
-    return dt.datetime.utcnow().date().isoformat()
+    return dt.datetime.now(dt.UTC).date().isoformat()
 
 def _is_request_file(p: Path) -> bool:
     name = p.name.lower()

@@ -13,7 +13,7 @@ IDEA_ID_RE = re.compile(r"\bidea_\d{8}_[0-9a-f]{8}\b")
 DOC_ID_RE = re.compile(r"\bdoc_\d{8}_[0-9a-f]{8}\b")
 
 def _today() -> str:
-    return dt.datetime.utcnow().date().isoformat()
+    return dt.datetime.now(dt.UTC).date().isoformat()
 
 def _collect_ids(text: str, regex: re.Pattern[str]) -> list[str]:
     return sorted(set(regex.findall(text or "")))

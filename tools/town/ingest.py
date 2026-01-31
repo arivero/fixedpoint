@@ -11,7 +11,7 @@ from .ids import new_id
 TEMPLATE_DIR = Path(__file__).parent / "templates"
 
 def _now_date() -> str:
-    return dt.datetime.utcnow().date().isoformat()
+    return dt.datetime.now(dt.UTC).date().isoformat()
 
 def _render_template(template_name: str, **kwargs: Any) -> str:
     tmpl = (TEMPLATE_DIR / template_name).read_text(encoding="utf-8")

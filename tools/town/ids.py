@@ -15,7 +15,7 @@ def new_id(kind: str, now: _dt.datetime | None = None) -> str:
     if kind not in ALLOWED_KINDS:
         raise ValueError(f"Unknown kind {kind!r}. Allowed: {sorted(ALLOWED_KINDS)}")
     if now is None:
-        now = _dt.datetime.utcnow()
+        now = _dt.datetime.now(_dt.UTC)
     ymd = now.strftime("%Y%m%d")
     suffix = _secrets.token_hex(4)  # 8 hex chars
     return f"{kind}_{ymd}_{suffix}"

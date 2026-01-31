@@ -15,10 +15,10 @@ This repo is designed so multiple LLM “entrypoints” can work on the same fil
 
 ## GitHub Actions (agentic)
 
-Some workflows call an LLM backend:
-- `town-idea-miner.yml` uses `python tools/townctl.py mine-ideas`
-- `town-writer.yml` uses `python tools/townctl.py draft-post`
-- `town-collector.yml` uses `python -m town.collector`
+Some optional workflows (not all included by default) may call an LLM backend:
+- idea-miner: `python tools/townctl.py mine-ideas`
+- writer: `python tools/townctl.py draft-post`
+- collector: `python -m town.collector`
 
 Configure via repo variables + secrets:
 - `vars.TOWN_LLM_BACKEND`: `openai` or `anthropic`

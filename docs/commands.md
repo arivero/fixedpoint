@@ -1,6 +1,8 @@
 # Slash commands (issue comments)
 
-These commands trigger GitHub Actions workflows (and/or optional gh-aw workflows).
+These commands are the intended interface for issue-driven automation.
+
+Note: only scheduled maintenance is implemented by default. The per-command workflows described below are planned and can be added when you’re ready.
 
 ## Librarian / ingestion
 
