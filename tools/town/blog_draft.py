@@ -92,7 +92,7 @@ Selected documents:
     if not slug:
         slug = "post"
     filename = f"{date}-{slug}.md"
-    out_path = repo_root / "site" / "_posts" / filename
+    out_path = repo_root / "docs" / "_posts" / filename
     out_path.parent.mkdir(parents=True, exist_ok=True)
 
     meta = {

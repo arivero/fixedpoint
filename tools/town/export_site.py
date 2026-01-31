@@ -25,7 +25,7 @@ def _strip_heading(md: str) -> str:
 
 def run(repo_root: Path) -> None:
     catalog = repo_root / "catalog"
-    site = repo_root / "site"
+    site = repo_root / "docs"
 
     ideas_md = _strip_heading((catalog / "ideas.md").read_text(encoding="utf-8")) if (catalog / "ideas.md").exists() else "(No ideas yet.)"
     docs_md = _strip_heading((catalog / "documents.md").read_text(encoding="utf-8")) if (catalog / "documents.md").exists() else "(No documents yet.)"

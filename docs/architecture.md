@@ -26,7 +26,7 @@ Lab artifacts
   - archived as `doc_*` in `vault/owned/`
 
 Publishing
-- Blog posts in `site/_posts/`
+- Blog posts in `docs/_posts/`
 - Post frontmatter includes `idea_ids` and `doc_ids`
 - Posts are deployed to GitHub Pages via `pages.yml`.
 

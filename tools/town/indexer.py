@@ -112,7 +112,7 @@ def scan_projects(repo_root: Path) -> list[dict[str, Any]]:
 
 
 def scan_posts(repo_root: Path) -> list[dict[str, Any]]:
-    posts_dir = repo_root / "site" / "_posts"
+    posts_dir = repo_root / "docs" / "_posts"
     out: list[dict[str, Any]] = []
     if not posts_dir.exists():
         return out

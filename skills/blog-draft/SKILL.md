@@ -1,14 +1,14 @@
 # Blog drafting skill
 
 Goal
-- Draft a Jekyll blog post in `site/_posts/` from a publication issue + selected ideas/documents.
+- Draft a Jekyll blog post in `docs/_posts/` from a publication issue + selected ideas/documents.
 
 Inputs
 - Issue title and body (or a local note).
 - Optional explicit `idea_ids` and `doc_ids`.
 
 Outputs
-- `site/_posts/YYYY-MM-DD-<slug>.md` with frontmatter:
+- `docs/_posts/YYYY-MM-DD-<slug>.md` with frontmatter:
   - `layout: post`
   - `idea_ids: [...]`
   - `doc_ids: [...]`

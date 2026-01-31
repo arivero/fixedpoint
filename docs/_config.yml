@@ -2,6 +2,10 @@ title: Agentic Fixedpoint
 description: Agentic research notes and blog
 theme: minima
 
+# GitHub Pages project site settings
+url: "https://arivero.github.io"
+baseurl: "/fixedpoint"
+
 markdown: kramdown
 kramdown:
   input: GFM

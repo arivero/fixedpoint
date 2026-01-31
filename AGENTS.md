@@ -44,7 +44,7 @@ Lab notes:
 - `lab/blackboards/<bb_id>.md` (multi-agent discussion)
 
 Publishing:
-- blog posts live in `site/_posts/YYYY-MM-DD-<slug>.md`
+- blog posts live in `docs/_posts/YYYY-MM-DD-<slug>.md`
 - posts must cite idea IDs and document IDs.
 
 Indexes (generated):

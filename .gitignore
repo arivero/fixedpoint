@@ -10,7 +10,7 @@ __pycache__/
 .idea/
 
 # Site build output
-site/_site/
+docs/_site/
 
 # Private material (do not commit)
 vault/private/

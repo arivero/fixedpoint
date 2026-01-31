@@ -28,9 +28,9 @@ These commands trigger GitHub Actions workflows (and/or optional gh-aw workflows
 
 - `/draft-post [idea_ids...] [doc_ids...]`
   - Runs `town-writer.yml`
-  - Drafts a blog post into `site/_posts/`.
+  - Drafts a blog post into `docs/_posts/`.
 
-- `/evaluate site/_posts/YYYY-MM-DD-slug.md`
+- `/evaluate docs/_posts/YYYY-MM-DD-slug.md`
   - Runs `town-evaluator.yml`
   - Performs deterministic checks and posts findings.
 

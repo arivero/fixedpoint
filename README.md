@@ -16,10 +16,12 @@ Coordination is GitHub-native: issues are the work surface; commits are the dura
 - “Owned” and “reference-only” materials are separated so you can keep non-owned fulltext out of the repository.
 - Indexes are generated deterministically from frontmatter; nothing is “hidden state”.
 
-## What runs automatically (GitHub Actions)
+## Automation
 
-- `town-maintenance.yml` (push + schedule): validates frontmatter, regenerates indexes, and exports site pages.
-- `pages.yml`: builds and deploys the Jekyll site from `site/` to GitHub Pages.
+By default, this repo has no scheduled automation enabled.
+
+- GitHub Pages can build the Jekyll site from `docs/` ("Pages from branch").
+- Optional: add GitHub Actions workflows to run `townctl.py lint/index/export-site` on push or on a schedule.
 
 Optional (modern agentic layer):
 - `.github/workflows/*.md` are **GitHub Next Agentic Workflows** sources (gh-aw). They are designed to be compiled into `*.lock.yml` workflows and run as agents on issues and comments.
@@ -32,7 +34,7 @@ Optional (modern agentic layer):
 - `lab/`: notebooks (private scratchpads) and blackboards (shared discussions).
 - `catalog/`: generated indexes and cross-reference tables (plain text).
 - `queue/`: file-based request queues (librarian + publication).
-- `site/`: GitHub Pages blog (Jekyll).
+- `docs/`: GitHub Pages blog (Jekyll) + repository documentation.
 
 See `AGENTS.md` for the rules agents must follow in this repo.
 
