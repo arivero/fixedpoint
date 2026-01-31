@@ -9,7 +9,7 @@ Inputs
 Outputs
 - `catalog/documents.*`, `catalog/ideas.*`, `catalog/projects.*`, `catalog/xref.yml`
 - `catalog/kanban.md`, `catalog/unused-ideas.md`
-- Exported pages: `docs/ideas.md`, `docs/documents.md`, `docs/projects.md`, `docs/kanban.md`
+- Exported indexes: `catalog/ideas.md`, `catalog/documents.md`, `catalog/projects.md`, `catalog/kanban.md`
 
 Procedure
 - `python tools/townctl.py index`

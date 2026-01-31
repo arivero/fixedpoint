@@ -27,6 +27,17 @@ def run(repo_root: Path) -> None:
     catalog = repo_root / "catalog"
     site = repo_root / "docs"
 
+    # This repo's blog is intended to be post-centric. If the catalog pages are
+    # not present in the published Jekyll site, do nothing.
+    required_pages = [
+        site / "ideas.md",
+        site / "documents.md",
+        site / "projects.md",
+        site / "kanban.md",
+    ]
+    if not all(p.exists() for p in required_pages):
+        return
+
     ideas_md = _strip_heading((catalog / "ideas.md").read_text(encoding="utf-8")) if (catalog / "ideas.md").exists() else "(No ideas yet.)"
     docs_md = _strip_heading((catalog / "documents.md").read_text(encoding="utf-8")) if (catalog / "documents.md").exists() else "(No documents yet.)"
     projects_md = _strip_heading((catalog / "projects.md").read_text(encoding="utf-8")) if (catalog / "projects.md").exists() else "(No projects yet.)"

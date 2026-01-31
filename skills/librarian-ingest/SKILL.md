@@ -13,7 +13,7 @@ Inputs
 Outputs
 - `vault/raw/<doc_id>/original.<ext>`
 - `vault/owned/<doc_id>/doc.md` (+ `transcript.md`) OR `vault/references/<doc_id>/doc.md`
-- Updated `catalog/*` and exported `docs/*.md` pages.
+- Updated `catalog/*`.
 
 Procedure
 1) Generate a document id:

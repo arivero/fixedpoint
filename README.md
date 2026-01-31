@@ -34,7 +34,7 @@ Optional (modern agentic layer):
 - `lab/`: notebooks (private scratchpads) and blackboards (shared discussions).
 - `catalog/`: generated indexes and cross-reference tables (plain text).
 - `queue/`: file-based request queues (librarian + publication).
-- `docs/`: GitHub Pages blog (Jekyll) + repository documentation.
+- `docs/`: GitHub Pages blog (Jekyll) (post-centric).
 
 See `AGENTS.md` for the rules agents must follow in this repo.
 

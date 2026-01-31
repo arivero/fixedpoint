@@ -35,5 +35,3 @@ These commands trigger GitHub Actions workflows (and/or optional gh-aw workflows
   - Performs deterministic checks and posts findings.
 
 Notes:
-- Actions are serialised with a shared concurrency group so commits are sequential.
-- The revision/approval process happens in the issue thread rather than PRs.
