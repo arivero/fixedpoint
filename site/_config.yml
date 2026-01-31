@@ -1,0 +1,24 @@
+title: Agentic Fixedpoint
+description: Agentic research notes and blog
+theme: minima
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  math_engine: mathjax
+
+plugins:
+  - jekyll-feed
+
+# Collections (optional export)
+collections:
+  ideas:
+    output: true
+  documents:
+    output: true
+  projects:
+    output: true
+
+exclude:
+  - vendor
+  - node_modules

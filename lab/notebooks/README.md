@@ -1,0 +1,3 @@
+# lab/notebooks/
+
+Scratchpads.

@@ -1,0 +1,5 @@
+# Requires Python 3.14+
+
+PyYAML>=6.0
+requests>=2.31
+python-dateutil>=2.9

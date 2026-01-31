@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+.env
+
+# OS / editors
+.DS_Store
+.vscode/
+.idea/
+
+# Site build output
+site/_site/
+
+# Private material (do not commit)
+vault/private/
+vault/**/private/
